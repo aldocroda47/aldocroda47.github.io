@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fdf9f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #e8501b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav .logo img {
+    width: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #c44117;
+}
+.bienvenida,
+.promociones,
+.instalaciones,
+.ubicacion {
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.bienvenida {
+    margin-top: 80px;
+    padding: 40px;
+    background-color: #f97f36;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.bienvenida h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.promociones {
+    padding: 50px 20px;
+    background-color: #f9a343;
+    color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.promociones h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.promocion {
+    background-color: #ffc58c;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.promocion:hover {
+    transform: scale(1.05);
+}
+
+.promocion img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.promocion p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.instalaciones {
+    padding: 50px 20px;
+    background-color: #5b93d3; 
+    color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.instalaciones h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.instalaciones p,
+.instalaciones ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ubicacion {
+    padding: 50px 20px;
+    background-color: #68a3e2; 
+    color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.ubicacion .mapa {
+    margin: 20px 0;
+    border: 3px solid #004b87;
+    border-radius: 10px;
+}
+
+.ubicacion p {
+    font-size: 18px;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #004b87;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-top:hover {
+    background-color: #003d73;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .carrusel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .scroll-top {
+        bottom: 10px;
+        right: 10px;
+    }
+}

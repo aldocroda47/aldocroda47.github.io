@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.row > div {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.bg-primary {
+    background-color: green !important;
+}
+
+.bg-secondary {
+    background-color: #202020 !important;
+}
+
+.bg-success {
+    background-color: green !important;
+}
+
+.bg-danger {
+    background-color: #202020 !important;
+}
+
+.bg-warning {
+    background-color: green !important;
+}
+
+.bg-info {
+    background-color: #202020 !important;
+}
+
+.bg-light {
+    background-color: green !important;
+}
+
+.bg-dark {
+    background-color: #202020 !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.p-3 {
+    padding: 16px !important;
+}
+
+.p-2 {
+    padding: 8px !important;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+}
+.row {
+    margin: 0 -10px;
+}
+.row > div {
+    padding: 10px;
+}
